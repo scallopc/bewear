@@ -2,7 +2,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import SignInForm from "./components/sign-in-form";
-//import SignUpForm from "./components/sign-up-form";
+import SignUpForm from "./components/sign-up-form";
 
 const Authentication = async () => {
     return (
@@ -18,9 +18,9 @@ const Authentication = async () => {
                     <TabsContent value="sign-in" className="w-full">
                         <SignInForm />
                     </TabsContent>
-                    {/* <TabsContent value="sign-up" className="w-full">
+                    <TabsContent value="sign-up" className="w-full">
                         <SignUpForm />
-                    </TabsContent> */}
+                    </TabsContent>
                 </Tabs>
             </div>
         </>
