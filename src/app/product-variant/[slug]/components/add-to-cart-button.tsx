@@ -3,7 +3,7 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 
-import { addProductToCart } from "@/actions/add-cart-product";
+import { addProductToCart } from "@/app/actions/add-cart-product";
 import { Button } from "@/components/ui/button";
 
 interface AddToCartButtonProps {
