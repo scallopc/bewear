@@ -4,7 +4,7 @@ import Image from "next/image";
 import CategorySelector from "@/components/common/category-selector";
 import Footer from "@/components/common/footer";
 import { Header } from "@/components/common/header";
-//import ProductList from "@/components/common/product-list";
+import ProductList from "@/components/common/product-list";
 import { db } from "@/db";
 import { productTable } from "@/db/schema";
 
@@ -37,7 +37,7 @@ const Home = async () => {
           />
         </div>
 
-        {/* <ProductList products={products} title="Mais vendidos" /> */}
+        <ProductList products={products} title="Mais vendidos" />
 
         <div className="px-5">
           <CategorySelector categories={categories} />
@@ -54,7 +54,7 @@ const Home = async () => {
           />
         </div>
 
-        {/* <ProductList products={newlyCreatedProducts} title="Novos produtos" /> */}
+        <ProductList products={newlyCreatedProducts} title="Novos produtos" />
         <Footer />
       </div>
     </>
