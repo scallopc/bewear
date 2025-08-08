@@ -574,7 +574,7 @@ async function main() {
 
       if (!categoryId) {
         throw new Error(
-          `Categoria "${productData.categoryName}" não encontrada`
+          `Categoria "${productData.categoryName}" não encontrada`,
         );
       }
 
@@ -617,8 +617,8 @@ async function main() {
         products.length
       } produtos com ${products.reduce(
         (acc, p) => acc + p.variants.length,
-        0
-      )} variantes.`
+        0,
+      )} variantes.`,
     );
   } catch (error) {
     console.error("❌ Erro durante o seeding:", error);
